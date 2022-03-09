@@ -1,5 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /crud-estudante
 
-
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      uri: ${MONGO_DB_URI:mongodb://root:root@127.0.0.1:27017/estudantes?authSource=admin}
+      auto-index-creation: true
 
 springdoc:
   swagger-ui:
