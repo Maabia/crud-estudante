@@ -5,7 +5,6 @@ import dev.cadastroestudante.tecnologia.application.repository.StudentRepository
 import dev.cadastroestudante.tecnologia.config.mapper.StudentModelMapper;
 import dev.cadastroestudante.tecnologia.domain.Student;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
