@@ -16,5 +16,4 @@ public interface StudentAPI {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     List<StudentResponse> listaEstudante ();
-
 }
