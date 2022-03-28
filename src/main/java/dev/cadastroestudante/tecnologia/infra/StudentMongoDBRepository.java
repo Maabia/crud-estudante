@@ -8,6 +8,6 @@ import java.util.List;
 import java.util.UUID;
 
 @Repository
-public interface StudentMongoDBRepository extends MongoRepository<Student, UUID> {
+public interface StudentMongoDBRepository extends MongoRepository<Student, String> {
 
 }
