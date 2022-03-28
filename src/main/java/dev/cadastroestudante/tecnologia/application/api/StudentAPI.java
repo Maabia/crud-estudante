@@ -2,10 +2,7 @@ package dev.cadastroestudante.tecnologia.application.api;
 
 import dev.cadastroestudante.tecnologia.application.dto.StudentResponse;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,4 +13,8 @@ public interface StudentAPI {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     List<StudentResponse> listaEstudante ();
+
+    @GetMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    StudentResponse busca(@PathVariable String id);
 }
