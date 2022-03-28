@@ -18,4 +18,10 @@ public class StudentRestController implements StudentAPI {
         List<StudentResponse> students = studentService.listaEstudante();
         return students;
     }
+
+    @Override
+    public StudentResponse busca(String id) {
+        StudentResponse student = studentService.buscaEstudante(id);
+        return student;
+    }
 }
