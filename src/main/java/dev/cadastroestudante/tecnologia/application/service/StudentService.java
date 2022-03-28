@@ -8,4 +8,6 @@ import java.util.List;
 @Service
 public interface StudentService {
     List<StudentResponse> listaEstudante();
+
+    StudentResponse buscaEstudante(String id);
 }

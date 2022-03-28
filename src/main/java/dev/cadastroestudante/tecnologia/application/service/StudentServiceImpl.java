@@ -21,4 +21,10 @@ public class StudentServiceImpl implements StudentService{
         List<Student> students = studentRepository.findAll();
         return studentMapper.toResponseList(students);
     }
+
+    @Override
+    public StudentResponse buscaEstudante(String id) {
+        Student student = studentRepository.findById(id);
+        return  studentMapper.toResponseDTO(student);
+    }
 }
